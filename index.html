@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Secret World of 007</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel=“stylesheet” type=“text/css” media=“screen” href=“css/styles.css”>
+    
+</head>
+<body>
+  
+     <h1>TEST SITE FOR JS</h1>
+     
+     <button id="event-start" type="button">This is your event listener that you will test with.</button>  
+
+     <div id="main-area" style="width: 30%">
+        <div class="theme-map" id="area1">001</div>
+        <div class="theme-map" id="area2">002</div>
+        <div class="theme-map" id="area3">003</div>
+        <div class="theme-map" id="area4">004</div>
+        <div class="theme-map" id="area5">005</div>
+        <div class="theme-map" id="area6">006</div>
+        <div class="theme-map" id="area7">007</div>
+        <div class="theme-map" id="area8">008</div>
+    </div>
+
+
+
+
+
+    <div id="footer">
+        <footer id="showdate">
+            <p id="todaysDate">&copy; 2018. Designed by the Shockwave Secret Agents.</p>
+        </footer>
+    </div>
+
+<!-- Firebase code/ Start -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDkYh29_wmaPHm1UOIqCzPT62peN6yWl-c",
+    authDomain: "theme-park-secret-agents.firebaseapp.com",
+    databaseURL: "https://theme-park-secret-agents.firebaseio.com",
+    projectId: "theme-park-secret-agents",
+    storageBucket: "theme-park-secret-agents.appspot.com",
+    messagingSenderId: "621759477806"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- Firebase code/ End -->
+
+
+    <div id="footer">
+        <footer id="showdate">
+            <p id="todaysDate"></p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+<!-- <script src=“dist/app.js”></script> -->
+<script src="js/area.js"></script>
+
+</body>
+</html>
