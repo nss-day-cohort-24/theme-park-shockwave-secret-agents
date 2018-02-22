@@ -2,6 +2,7 @@
 
 let themeParkArea = require("./area.js");
 
+
 themePark.loadThemeParkAreas()
 .then(
 	(themeAreaLoadResolve) => {
@@ -13,3 +14,5 @@ themePark.loadThemeParkAreas()
 	});
 
 // themeParkArea.loadThemeParkAreas();
+
+
