@@ -1,7 +1,6 @@
 {
   "name": "lib",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +16,8 @@
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "matchdep": "^2.0.0"
-  }
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "description": ""
 }
