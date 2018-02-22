@@ -75,7 +75,6 @@ function secretWorld (attractions) {
     });
     
 };
-// .then
 
 console.log("what is in themeParkAreas? ", themeParkAreas.loadThemeParkAreas());
 //  //resolve(attractions);
