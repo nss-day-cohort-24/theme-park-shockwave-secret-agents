@@ -66,10 +66,8 @@ function secretWorld (attractions) {
             console.log("what's in atrractions", attractions);
 
             resolve(attractions);
-            
-			// secretWorld(attractions);
-			// console.log("What is attractionItem showing? ", attractionItem);
-			// resolve(themeParkLoader);
+		
+			console.log("What is attractions showing? ", attractions);
         }); 
         
         // const cannotLoad = new Error("cannot load the attractions.");
@@ -77,7 +75,6 @@ function secretWorld (attractions) {
     });
     
 };
-
 // .then
 
 console.log("what is in themeParkAreas? ", themeParkAreas.loadThemeParkAreas());
