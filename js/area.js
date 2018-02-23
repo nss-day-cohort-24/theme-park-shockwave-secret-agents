@@ -31,24 +31,23 @@ var themeParkAreas = {};
         // let allAreas = document.getElementsByClassName("theme-map");
         // console.log("What does allAreas have?", allAreas); // has a collection of all the divs named theme-map
 
-function secretWorld (attractions) {
-    //console.log(attractions.target.id);
-    let keys = Object.keys(attractions);
+function secretWorld (areasPark) {
+    let keys = Object.keys(areasPark);
     keys.forEach((item) => {
 
         //add the firebaseID to the object
-        attractions[item].firebaseID = item;
-        attractionItem.push(attractions[item]);
+        areasPark[item].firebaseID = item;
+        attractionItem.push(areasPark[item]);
     });
 
-        console.log("Does it get all attractions? ", attractions);
+        console.log("Does it get all areasPark? ", areasPark);
 
 }
 
     // get all areas
-    themeParkAreas.getThemeAreas = () => {
-        return attractionItem;
-    };
+    // themeParkAreas.getThemeAreas = () => {
+    //     return attractionItem;
+    // }; console.log("What's in attractionItem? ", attractionItem); // This is an empty array
     
     // load themePark Areas xhr
     themeParkAreas.loadThemeParkAreas = () => {
@@ -59,15 +58,15 @@ function secretWorld (attractions) {
         themeParkLoader.open("GET", `https://theme-park-secret-agents.firebaseio.com/areas.json`);
        
             themeParkLoader.send();
-            console.log("What's in Theme park Loader: ", themeParkLoader);
+            console.log("What's in ThemeParkLoader: ", themeParkLoader);
 
             themeParkLoader.addEventListener("load", function(){
-			let attractions = JSON.parse(this.responseText);
-            console.log("what's in atrractions", attractions);
+			let areasPark = JSON.parse(this.responseText);
+            console.log("what's in areasPark", areasPark);
 
-            resolve(attractions);
+            resolve(areasPark);
 		
-			console.log("What is attractions showing? ", attractions);
+			console.log("What is areasPark showing? ", areasPark);
         }); 
         
         // const cannotLoad = new Error("cannot load the attractions.");
@@ -77,7 +76,16 @@ function secretWorld (attractions) {
 };
 
 console.log("what is in themeParkAreas? ", themeParkAreas.loadThemeParkAreas());
-//  //resolve(attractions);
-//  console.log("What is attraction showing? ", attractions);
 
-module.exports = {themeParkAreas};
+
+// Test to see if this works to put in the dom
+let themePark = themeParkAreas; 
+console.log("what is in themePark? ", themePark); //Here themeParkAreas show a Promise Value with 8 Array
+
+//TO DO: 
+//get the areaArray items out of the array. 
+//Then display them to each div id in DOM
+// Ask.
+
+
+module.exports = themePark;

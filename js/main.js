@@ -1,18 +1,8 @@
 "use strict";
 
-let themeParkArea = require("./area.js");
 
+let parkAreas = require("./area");
+let domElements = require("./dom-elements");
 
-themePark.loadThemeParkAreas()
-.then(
-	(themeAreaLoadResolve) => {
-		console.log("Cake Promise", themeAreaLoadResolve);
-		populatePage(themeAreaLoadResolve);
-	},
-	(reject) => {
-		console.log("Areas are not loading");
-	});
-
-// themeParkArea.loadThemeParkAreas();
 
 
