@@ -40,37 +40,26 @@ function secretWorld (areasPark) {
         attractionItem.push(areasPark[item]);
     });
 
-        console.log("Does it get all areasPark? ", areasPark);
 
 }
 
-    // get all areas
-    // themeParkAreas.getThemeAreas = () => {
-    //     return attractionItem;
-    // }; console.log("What's in attractionItem? ", attractionItem); // This is an empty array
-    
     // load themePark Areas xhr
     themeParkAreas.loadThemeParkAreas = () => {
         let id = 1;
         return new Promise ( function (resolve, reject){
             let themeParkLoader = new XMLHttpRequest();
 
-        themeParkLoader.open("GET", `https://theme-park-secret-agents.firebaseio.com/areas.json`);
+            themeParkLoader.open("GET", `https://theme-park-secret-agents.firebaseio.com/areas.json`);
        
             themeParkLoader.send();
-            console.log("What's in ThemeParkLoader: ", themeParkLoader);
-
             themeParkLoader.addEventListener("load", function(){
-			let areasPark = JSON.parse(this.responseText);
-            console.log("what's in areasPark", areasPark);
+                let areasPark = JSON.parse(this.responseText);
 
             resolve(areasPark);
 		
 			console.log("What is areasPark showing? ", areasPark);
         }); 
         
-        // const cannotLoad = new Error("cannot load the attractions.");
-        // reject(cannotLoad);
     });
     
 };
@@ -82,6 +71,8 @@ console.log("what is in themeParkAreas? ", themeParkAreas.loadThemeParkAreas());
 let themePark = themeParkAreas; 
 console.log("what is in themePark? ", themePark); //Here themeParkAreas show a Promise Value with 8 Array
 
+
+
 //TO DO: 
 //get the areaArray items out of the array. 
 //Then display them to each div id in DOM
@@ -89,3 +80,4 @@ console.log("what is in themePark? ", themePark); //Here themeParkAreas show a P
 
 
 module.exports = themePark;
+//module.exports = getAttractions;
