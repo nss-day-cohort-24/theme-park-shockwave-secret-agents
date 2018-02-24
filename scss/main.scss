@@ -2,32 +2,39 @@ body {
     margin: 0;
 }
 
-.container-fluid {
-    width: 1024px;
-    /*width: 100%; */
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+// .container-fluid {
+//     width: 1024px;
+//     /*width: 100%; */
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     margin-right: auto;
+//     margin-left: auto;
 
-}
-.row {
-    float: left;
-}
-div.col-md-6 {
-    position: relative;
-    width: 65%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
-}
-img {
-    width: 60%;
-    float: right;
-}
+// }
+// .row {
+//     // float: left;
+//     background-image: url("../images/top1.jpg");
+//     background-color: black;
+//     background-size: cover;
+//     width: 300px;
+//     object-fit: contain;
+// }
+// div.col-md-6 {
+//     position: relative;
+//     width: 65%;
+//     min-height: 1px;
+//     padding-right: 15px;
+//     padding-left: 15px
+// }
+// img {
+//     width: 60%;
+//     float: right;
+// }
 #map-area {
-    background: url("../images/top1.jpg");
-    width: 300px;
+    background-image: url("../images/top1.jpg");
+    background-color: black;
+    background-size: cover;
+    // width: 300px;
     object-fit: contain;
     // flex-wrap: wrap;
 }
