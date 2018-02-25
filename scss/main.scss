@@ -1,40 +1,68 @@
+/* import into SCSS */
+@import url('https://fonts.googleapis.com/css?family=Hind|Patua+One');
+
 body {
     margin: 0;
+    background-color: rgba(58, 58, 58, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Hind', sans-serif;
 }
 
-// .container-fluid {
-//     width: 1024px;
-//     /*width: 100%; */
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     margin-right: auto;
-//     margin-left: auto;
+h1, h2, h3, h4, .navbar-light .navbar-brand {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Patua One', cursive;
+}
 
-// }
-// .row {
-//     // float: left;
-//     background-image: url("../images/top1.jpg");
-//     background-color: black;
-//     background-size: cover;
-//     width: 300px;
-//     object-fit: contain;
-// }
-// div.col-md-6 {
-//     position: relative;
-//     width: 65%;
-//     min-height: 1px;
-//     padding-right: 15px;
-//     padding-left: 15px
-// }
-// img {
-//     width: 60%;
-//     float: right;
-// }
+.navbar-brand{
+    background-color: #EB5E30;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.mr-auto, .mx-auto {
+    margin-left: auto!important;
+}
+
+
 #map-area {
     background-image: url("../images/top1.jpg");
     background-color: black;
     background-size: cover;
-    // width: 300px;
     object-fit: contain;
-    // flex-wrap: wrap;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #EB5E30;
+}
+.card-header {
+    color: #FFFFFF;
+    background-color: #EB5E30;
+}
+.card-text a{
+    color: #3A3A3A;
+    text-decoration-line: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.btn-link    {
+    color: #FFFFFF;
+}
+.btn-outline-success {
+    border: 1px solid #EB5E30;
+    color: #EB5E30;
+}
+btn.btn-outline-success.my-2.my-sm-0 a:hover{
+    background-color: #EB5E30;
+}
+
+footer {
+    margin: .5em 0;
+    padding: 1em;
+    border: 1px solid #3A3A3A;
 }
