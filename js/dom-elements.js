@@ -17,14 +17,14 @@ parkAreas.themeParkAreas()
                 <div class="card">
                     <img class="card-img-top" alt="Card image cap">
                     <div class="card-body">
-                    <p class="card-text" id="main-area"><a href="#">${results[item].name}</a></p>
+                    <p class="card-text" id="main-area"><a href="#main-area">${results[item].name}</a></p>
                     </div>
                 </div>
             </div>`;
         // button element
         document.getElementById(`${results[item].id}`).addEventListener("click", function(){
             document.getElementById("main-area").innerHTML +=
-            `<div id="area--${results[item].id}"><h2>${results[item].name}</h2><p>${results[item].description}</p></div>`;
+            `<div id="area--${results[item].id}"><h2>${results[item].name}</h2><p>${results[item].description}</p>p>${results[item].times}</p></div>`;
             });
 
 
@@ -50,31 +50,29 @@ parkAreas.themeParkAreas()
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne${results[attracItem].id}" aria-expanded="false" aria-controls="collapseOne${results[attracItem].id}">
-                  ${results[attracItem].name}
+                  (${results[attracItem].name}) &nbsp;  ${results[attracItem].area_id}
                   </button>
                 </h5>
               </div>
           
               <div id="collapseOne${results[attracItem].id}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">${results[attracItem].description}
+                <div class="card-body">${results[attracItem].description}<p>${results[attracItem].times}</p>
                 </div>
               </div>
             </div>`;
 
-            // `<div class="alert alert-warning" id="${results[attracItem].area_id}"><button onclick="attracToggle()"><h3>${results[attracItem].name}</h3></button>`;
 
-
-            function attracToggle() {
-                var displayInfo = results[attracItem].description;
-                var displayMain = displayInfo;
-                console.log("What does displayMain show? ", displayMain);
-                displayMain = document.getElementById("main-attra");
-                if (displayMain.style.display === "none") {
-                    displayMain.style.display = "block";
-                } else {
-                    displayMain.style.display = "none";
-                }
-            }
+            // function attracToggle() {
+            //     var displayInfo = results[attracItem].description;
+            //     var displayMain = displayInfo;
+            //     console.log("What does displayMain show? ", displayMain);
+            //     displayMain = document.getElementById("main-attra");
+            //     if (displayMain.style.display === "none") {
+            //         displayMain.style.display = "block";
+            //     } else {
+            //         displayMain.style.display = "none";
+            //     }
+            // }
         });
     });
 
