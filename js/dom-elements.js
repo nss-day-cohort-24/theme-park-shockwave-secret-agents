@@ -15,12 +15,12 @@ parkAreas.themeParkAreas()
                 
             `<div id="${results[item].id}" class="col-4">
                 <div class="card">
-                <img class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                <p class="card-text" id="main-area"><a href="#">${results[item].name}</a></p>
-        </div>
-        </div>
-        </div>`;
+                    <img class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                    <p class="card-text" id="main-area"><a href="#">${results[item].name}</a></p>
+                    </div>
+                </div>
+            </div>`;
         // button element
         document.getElementById(`${results[item].id}`).addEventListener("click", function(){
             document.getElementById("main-area").innerHTML +=
@@ -49,13 +49,13 @@ parkAreas.themeParkAreas()
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne${results[attracItem].id}" aria-expanded="false" aria-controls="collapseOne${results[attracItem].id}">
                   ${results[attracItem].name}
                   </button>
                 </h5>
               </div>
           
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne${results[attracItem].id}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">${results[attracItem].description}
                 </div>
               </div>

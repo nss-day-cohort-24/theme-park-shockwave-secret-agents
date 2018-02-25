@@ -23,46 +23,6 @@ document.getElementById("todaysDate").innerHTML = `<p>${copyright}: ${todaysDate
 // Load the areas with information
 
 
-// create an empty function
-
-//let attractionItem = [];
-// var themeParkAreas = {};
-
-        // let allAreas = document.getElementsByClassName("theme-map");
-        // console.log("What does allAreas have?", allAreas); // has a collection of all the divs named theme-map
-
-// function secretWorld (areasPark) {
-//     let keys = Object.keys(areasPark);
-//     keys.forEach((item) => {
-
-//         //add the firebaseID to the object
-//         areasPark[item].firebaseID = item;
-//         attractionItem.push(areasPark[item]);
-//     });
-
-// }
-
-    // load themePark Areas xhr
-//     themeParkAreas.loadThemeParkAreas = () => {
-//         let id = 1;
-//         return new Promise ( function (resolve, reject){
-//             let themeParkLoader = new XMLHttpRequest();
-
-//             themeParkLoader.open("GET", `https://theme-park-secret-agents.firebaseio.com/areas.json`);
-       
-//             themeParkLoader.send();
-//             themeParkLoader.addEventListener("load", function(){
-//                 let areasPark = JSON.parse(this.responseText);
-
-//             resolve(areasPark);
-		
-// 			console.log("What is areasPark showing? ", areasPark);
-//         }); 
-        
-//     });
-    
-// };
-
 let themeParkAreas = function(id) {
     return new Promise (function (resolve, reject){
         let themeParkLoader = new XMLHttpRequest();
@@ -90,13 +50,6 @@ console.log("what is in themePark? ", themePark); //Here themeParkAreas show a P
 
 
 
-//TO DO: 
-//get the areaArray items out of the array. 
-//Then display them to each div id in DOM
-// Ask.
-
-
-
 let getAttractions = function(id) {
     return new Promise (function (resolve, reject){
         let attractionLoader = new XMLHttpRequest();
@@ -119,4 +72,3 @@ let getAttractions = function(id) {
 
 
 module.exports = {themeParkAreas, getAttractions};
-//module.exports = getAttractions;
