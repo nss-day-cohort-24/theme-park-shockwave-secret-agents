@@ -37,6 +37,13 @@
             "description": "Liberty Square re-creates America at the time of the American Revolution. The architecture is Federal or Colonial, and provides a seamless transition from the edge of Fantasyland to Frontierland. A real, 130-year-old live oak, the Liberty Tree, lends dignity and grace to the setting.",
             "colorTheme": "2594D9"
         },
+
+        {
+            "id": 9,
+            "name": "Current Events",
+            "colorTheme": "C83A82"
+        },
+
         {
             "id": 5,
             "name": "Fantasyland",
@@ -91,6 +98,7 @@
             "type_id": 4,
             "area_id": 1
         },
+
         {
             "id": 5,
             "name": "Main Street Confectionary",
@@ -1040,6 +1048,10 @@
         {
             "id": 8,
             "name": "special event"
+        },
+        {
+            "id": 9,
+            "name": "Current Events"
         }
     ]
 }
