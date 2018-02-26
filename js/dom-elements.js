@@ -1,6 +1,9 @@
 "use strict";
 let parkAreas = require("./area");
 
+
+
+
 // loading all areas
 parkAreas.themeParkAreas()
 .then((results) => {
@@ -104,4 +107,6 @@ parkAreas.themeParkAreas()
         // document.getElementById("area1").innerHTML = `<div><p>001</p>${results[item].name}</div>`;
 
         //document.getElementById(`${results[item].id}`).style.background = `#${results[item].colorTheme}`;
+
+
 
