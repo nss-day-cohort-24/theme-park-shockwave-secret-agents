@@ -2,9 +2,9 @@
 
 // // this is the function to get the current time
 var d = new Date();
-document.getElementById("event-start");.innerHTML = d.getDay();
+document.getElementById("event-start").innerHTML = d.getDay();
 
-console.log("this is the time?",d);
+console.log("this is the time?", d);
 
 module.exports = d;
 
