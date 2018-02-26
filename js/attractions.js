@@ -17,6 +17,7 @@ function formatTimeShow(h_24) {
 
 
 //1. store the button for use later
+// added
 const currentEventsButton = document.getElementById("current-events");
 
 //2. create a function that runs when the click events happens.
